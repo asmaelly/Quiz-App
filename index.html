@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <title>QUIZ APP</title>
+</head>
+<body>
+    <div class="start-screen" id="start-screen">
+        <details class="container_rules" id="rules-screen">
+            <summary><strong>Rules</strong></summary>
+            <p>You will be presented with a question.</p>
+            <p>Choose the correct answer.</p>
+            <p>Each question carries 1 point.</p>
+            <p>Your score will be displayed at the end.</p>
+        </details>
+        <div class="container_start">
+            <h1>Welcome to the Quiz App! </h1>
+            <p class="description">Test your coding knowledge and see how much you know! 🚀</p>
+            <button id="start-button">Start Quiz</button>
+        </div>
+    </div>
+
+    <div class="container" id="quiz-screen" style="display: none;">
+        <h2 id="question">Question goes here</h2>
+        <div class="options" id="options"></div>
+        <p id="result"></p>
+        <button id="next-button" style="display: none;">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
